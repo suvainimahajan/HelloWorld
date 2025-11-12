@@ -1,0 +1,24 @@
+<html>
+<head> 
+    <style>
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+</style>
+</head>
+<body> 
+<div></div>
+</body>
+<script>
+    function updateTime(){
+        let el = document.body.children[0];
+        let t = new Date();
+        el.innerText = t.toLocaleString();
+    }
+    setInterval(updateTime, 1000);
+</script>
+</html>
